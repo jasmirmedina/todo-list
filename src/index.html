@@ -6,6 +6,50 @@
   <title>Todo List</title>
 </head>
 <body>
+  <div class="sidebar flex-col">
+    <div class="sidebar__header flex-col">
+      <div class="sidebar__header-logo">
+        <p class="opacity">Todo</p>
+        <p>List</p>
+      </div>
 
+      <div class="sidebar__header-dates flex-col">
+        <p class="sidebar__header-actual-date">Sunday</p>
+        <p class="sidebar__header-actual-day opacity">February 2, 2025</p>
+      </div>
+    </div>
+
+    <hr class="divider opacity">
+
+    <div class="sidebar__projects-ctn flex-col">
+      <div class="sidebar__projects-header">
+        <p>Projects</p>
+      </div>
+
+      <div class="sidebar__projects flex-col">
+        <div class="sidebar__project">Default project</div>
+      </div>
+    </div>
+
+    <div class="sidebar__add-project-btn-ctn">
+      <button type="button" class="sidebar__add-project-btn">Add project</button>
+    </div>
+  </div>
+
+  <div class="main flex-col">
+    <div class="main__actual-project-name-ctn">
+      <p class="main__actual-project-name opacity">Default project</p>
+    </div>
+
+    <div class="main__tasks-ctn flex-col">
+      <div class="main__task">Default task</div>
+    </div>
+
+    <div class="main__task-btns-ctn">
+      <button type="button" class="main__add-task-btn">Add task</button>
+      <button type="button" class="main__dc-task-btn">Delete completed</button>
+      <button type="button" class="main__da-task-btn">Delete all</button>
+    </div>
+  </div>
 </body>
 </html>

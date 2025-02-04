@@ -1,1 +1,36 @@
 @import url(minireset.css);
+
+@import url(./styles/sidebar.css);
+@import url(./styles/main.css);
+
+:root {
+  --bg: #161515;
+  --text: #f1f0f0;
+  --border: #313131;
+  --blue: #89b4fa;
+  --sky: #89dceb;
+  --hover: rgba(41, 41, 41, 0.4);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-family: system-ui;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.divider {
+  border: 1px solid var(--border);
+  margin: 0 10px;
+}

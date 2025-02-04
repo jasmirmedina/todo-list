@@ -1,0 +1,56 @@
+.main {
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 20px;
+  user-select: none;
+}
+
+.main__actual-project-name {
+  font-size: 2rem;
+}
+
+.main__tasks-ctn {
+  gap: 15px;
+  padding: 10px;
+  flex-grow: 1;
+  height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.main__tasks-ctn::-webkit-scrollbar {
+  display: none;
+}
+
+.main__task {
+  padding: 8px 15px;
+  background-color: #252525;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main__task:hover {
+  background-color: var(--hover);
+  transition-duration: 200ms;
+}
+
+.main__task-btns-ctn {
+  display: flex;
+  gap: 10px;
+}
+
+.main__task-btns-ctn button {
+  flex: 1;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.main__task-btns-ctn button:hover {
+  background-color: var(--hover);
+  transition-duration: 200ms;
+}
