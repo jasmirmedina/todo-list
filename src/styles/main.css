@@ -43,3 +43,14 @@
   display: flex;
   gap: 10px;
 }
+
+.main__actual-project-name-ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__handle-sidebar-btn {
+  display: flex;
+  cursor: pointer;
+}

@@ -8,6 +8,15 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   user-select: none;
+  width: 300px;
+  background-color: var(--bg);
+  z-index: 1;
+  transition: transform 100ms linear;
+}
+
+.sidebar--is-hidden {
+  transform: translateX(-100vh);
+  transition: transform 100ms linear;
 }
 
 .sidebar__projects-ctn {
@@ -89,4 +98,11 @@
 .sidebar__add-project-btn:hover {
   background-color: var(--hover);
   transition-duration: 200ms;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    position: absolute;
+    height: 100vh;
+  }
 }
