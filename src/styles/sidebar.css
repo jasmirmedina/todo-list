@@ -1,6 +1,6 @@
 .sidebar {
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
