@@ -10,7 +10,7 @@ const addDialogAnimations = (dialog, className, ...args) => {
   });
 };
 
-const dialogAnimations = () => {
+const handleDialog = () => {
   const projectsDialog = $(".projects-dialog");
 
   const sidebarAddProjectBtn = $(".sidebar__add-project-btn");
@@ -24,4 +24,4 @@ const dialogAnimations = () => {
   );
 };
 
-export default dialogAnimations;
+export default handleDialog;
