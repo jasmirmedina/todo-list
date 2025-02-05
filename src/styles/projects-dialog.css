@@ -1,5 +1,5 @@
 .projects-dialog {
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: var(--bg);
   padding: 20px;
@@ -9,6 +9,12 @@
   gap: 16px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: transform 200ms linear;
+}
+
+.projects-dialog--is-hidden {
+  transform: translateY(200vh);
+  transition: transform 200ms linear;
 }
 
 .projects-dialog__project-name-ctn {
