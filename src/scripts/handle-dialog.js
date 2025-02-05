@@ -12,7 +12,6 @@ const addDialogAnimations = (dialog, className, ...args) => {
 
 const handleDialog = () => {
   const projectsDialog = $(".projects-dialog");
-
   const sidebarAddProjectBtn = $(".sidebar__add-project-btn");
   const cancelProjectBtn = $(".projects-dialog__cancel-project-btn");
 
@@ -21,6 +20,17 @@ const handleDialog = () => {
     "projects-dialog--is-hidden",
     sidebarAddProjectBtn,
     cancelProjectBtn,
+  );
+
+  const tasksDialog = $(".tasks-dialog");
+  const mainAddTaskBtn = $(".main__add-task-btn");
+  const cancelTaskBtn = $(".tasks-dialog__cancel-task-btn");
+
+  addDialogAnimations(
+    tasksDialog,
+    "tasks-dialog--is-hidden",
+    mainAddTaskBtn,
+    cancelTaskBtn,
   );
 };
 

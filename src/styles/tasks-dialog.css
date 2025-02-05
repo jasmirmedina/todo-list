@@ -1,0 +1,55 @@
+.tasks-dialog {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: var(--bg);
+  padding: 20px;
+  transition: transform 100ms linear;
+}
+
+.tasks-dialog--is-hidden {
+  transform: translateY(100vh);
+  transition: transform 100ms linear;
+}
+
+.tasks-dialog > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+}
+
+.tasks-dialog > div > div label {
+  font-size: 1.1rem;
+}
+
+.tasks-dialog__task-title-ctn,
+.tasks-dialog__task-description-ctn,
+.tasks-dialog__task-priority-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tasks-dialog__task-btns-ctn {
+  display: flex;
+  gap: 10px ;
+}
+
+#task-title,
+#task-description,
+#task-priority {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border);
+  outline: none;
+  color: rgba(241, 240, 240, 0.6);
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .tasks-dialog > div {
+    width: 100%;
+  }
+}

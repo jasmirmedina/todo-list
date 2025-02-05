@@ -39,7 +39,7 @@
   padding: 4px;
 }
 
-.projects-dialog__add-project-btn-ctn {
+.projects-dialog__project-btns-ctn {
   display: flex;
   gap: 10px;
 }
