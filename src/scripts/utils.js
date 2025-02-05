@@ -6,4 +6,6 @@ const cleanCtn = (ctn) => {
   }
 };
 
-export { $, cleanCtn };
+const checkLocalStorage = (item) => localStorage.getItem(item) === null;
+
+export { $, cleanCtn, checkLocalStorage };

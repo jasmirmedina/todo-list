@@ -29,6 +29,8 @@
 }
 
 .main__task {
+  display: flex;
+  justify-content: space-between;
   padding: 8px 15px;
   background-color: #252525;
   border-radius: 10px;
@@ -38,6 +40,17 @@
 .main__task:hover {
   background-color: var(--hover);
   transition-duration: 200ms;
+}
+
+.main__task > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__delete-task-btn:hover {
+  opacity: 0.8;
+  cursor: auto;
 }
 
 .main__task-btns-ctn {

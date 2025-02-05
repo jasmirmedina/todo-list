@@ -28,7 +28,10 @@
       </div>
 
       <div class="sidebar__projects">
-        <div class="sidebar__project">Default project</div>
+        <div class="sidebar__project">
+          <p class="sidebar__project-name">Default project</p>
+          <span class="sidebar__delete-project-btn">X</span>
+        </div>
       </div>
     </div>
 
@@ -57,7 +60,14 @@
     </div>
 
     <div class="main__tasks-ctn">
-      <div class="main__task">Default task</div>
+      <div class="main__task">
+        <div>
+          <input type="checkbox" class="main__task-check-complete">
+          <p class="main__task-title">Default task</p>
+        </div>
+
+        <span class="main__delete-task-btn">X</span>
+      </div>
     </div>
 
     <div class="main__task-btns-ctn">
@@ -70,11 +80,6 @@
       <div class="tasks-dialog__task-title-ctn">
         <label for="task-title">Title</label>
         <input type="text" id="task-title">
-      </div>
-
-      <div class="tasks-dialog__task-description-ctn">
-        <label for="task-description">Description:</label>
-        <input type="text" id="task-description">
       </div>
 
       <div class="tasks-dialog__task-priority-ctn">

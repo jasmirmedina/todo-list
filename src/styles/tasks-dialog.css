@@ -21,7 +21,6 @@
 }
 
 .tasks-dialog__task-title-ctn,
-.tasks-dialog__task-description-ctn,
 .tasks-dialog__task-priority-ctn {
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@
 }
 
 #task-title,
-#task-description,
 #task-priority {
   background-color: transparent;
   border: none;

@@ -40,11 +40,19 @@
 }
 
 .sidebar__project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252525;
   padding: 8px 15px;
   border-radius: 10px;
   font-size: 0.9rem;
   cursor: pointer;
+}
+
+.sidebar__delete-project-btn:hover {
+  opacity: 0.8;
+  cursor: auto;
 }
 
 .sidebar__project:hover {
@@ -72,10 +80,6 @@
   -webkit-background-clip: text;
 }
 
-.sidebar__projects-ctn p {
-  font-size: 1.4rem;
-}
-
 .sidebar__header-dates {
   display: flex;
   flex-direction: column;
@@ -98,6 +102,10 @@
 .sidebar__add-project-btn:hover {
   background-color: var(--hover);
   transition-duration: 200ms;
+}
+
+.sidebar__projects-header p {
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 800px) {
