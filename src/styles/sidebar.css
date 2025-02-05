@@ -1,4 +1,7 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   justify-content: space-between;
   gap: 10px;
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.5);
@@ -8,6 +11,8 @@
 }
 
 .sidebar__projects-ctn {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   flex-grow: 1;
 }
@@ -39,6 +44,8 @@
 }
 
 .sidebar__header {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -61,6 +68,8 @@
 }
 
 .sidebar__header-dates {
+  display: flex;
+  flex-direction: column;
   gap: 4px;
 }
 

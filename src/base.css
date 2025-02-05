@@ -2,6 +2,8 @@
 
 @import url(./styles/sidebar.css);
 @import url(./styles/main.css);
+@import url(./styles/projects-dialog.css);
+@import url(./styles/tasks-dialog.css);
 
 :root {
   --bg: #161515;
@@ -21,11 +23,6 @@ body {
   font-family: system-ui;
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
 .opacity {
   opacity: 0.6;
 }
@@ -33,4 +30,19 @@ body {
 .divider {
   border: 1px solid var(--border);
   margin: 0 10px;
+}
+
+.btn {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover);
+  transition-duration: 200ms;
 }

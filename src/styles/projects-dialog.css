@@ -1,0 +1,39 @@
+.projects-dialog {
+  display: none;
+  flex-direction: column;
+  background-color: var(--bg);
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.projects-dialog__project-name-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects-dialog__project-name-ctn label {
+  font-size: 1.1rem;
+}
+
+#project-name {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border);
+  color: rgba(241, 240, 240, 0.6);
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  padding: 4px;
+}
+
+.projects-dialog__add-project-btn-ctn {
+  display: flex;
+  gap: 10px;
+}
