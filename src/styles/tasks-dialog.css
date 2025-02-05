@@ -1,4 +1,7 @@
 .tasks-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -13,14 +16,7 @@
   transition: transform 100ms linear;
 }
 
-.tasks-dialog > div {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 300px;
-}
-
-.tasks-dialog > div > div label {
+.tasks-dialog > div > label {
   font-size: 1.1rem;
 }
 
@@ -46,10 +42,4 @@
   outline: none;
   color: rgba(241, 240, 240, 0.6);
   font-size: 1rem;
-}
-
-@media only screen and (max-width: 800px) {
-  .tasks-dialog > div {
-    width: 100%;
-  }
 }
