@@ -1,6 +1,6 @@
 import { $ } from "./utils";
 
-const getActualDates = () => {
+const getCurrentDates = () => {
   const date = new Date();
 
   const dateOptions = {
@@ -9,27 +9,27 @@ const getActualDates = () => {
     fullDateOptions: { month: "long", day: "numeric", year: "numeric" },
   };
 
-  const actualDay = date.toLocaleDateString(
+  const currentDay = date.toLocaleDateString(
     dateOptions.locale,
     dateOptions.dayOptions,
   );
 
-  const actualFullDate = date.toLocaleDateString(
+  const currentFullDate = date.toLocaleDateString(
     dateOptions.locale,
     dateOptions.fullDateOptions,
   );
 
-  return { actualDay, actualFullDate };
+  return { currentDay, currentFullDate };
 };
 
 const handleDates = () => {
-  const actualDates = getActualDates();
+  const actualDates = getCurrentDates();
 
-  const actualDay = $(".sidebar__header-actual-day");
-  const actualFullDate = $(".sidebar__header-actual-date");
+  const currentDay = $(".sidebar__header-actual-day");
+  const currentFullDate = $(".sidebar__header-actual-date");
 
-  actualDay.textContent = actualDates.actualDay;
-  actualFullDate.textContent = actualDates.actualFullDate;
+  currentDay.textContent = actualDates.currentDay;
+  currentFullDate.textContent = actualDates.currentFullDate;
 };
 
 export default handleDates;
