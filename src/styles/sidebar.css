@@ -27,6 +27,8 @@
 }
 
 .sidebar__projects {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   height: 0;
   flex-grow: 1;

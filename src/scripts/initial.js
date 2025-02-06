@@ -10,6 +10,9 @@ const initial = () => {
     const defaultProject = new Project("Default");
     const defaultTask = new Task("Default", 0);
 
+    defaultProject.isDefault = true;
+    defaultProject.isSelected = true;
+
     defaultProject.tasks.push(defaultTask);
 
     projects.push(defaultProject);
