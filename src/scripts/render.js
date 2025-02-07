@@ -1,5 +1,5 @@
 import projects from "./projects";
-import updateActualProjectName from "./update-actual-project-name";
+import updateCurrentProjectName from "./update-current-project-name";
 
 import { $, createElement, cleanCtn } from "./utils";
 
@@ -42,7 +42,7 @@ const createProjectElement = (project, index) => {
   sidebarProjectDiv.addEventListener(
     "click",
     () => updateProjectSelection(index),
-    updateActualProjectName(),
+    updateCurrentProjectName(),
   );
 
   sidebarProjectSpan.addEventListener("click", (event) => {

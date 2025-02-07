@@ -2,7 +2,7 @@ import projects from "./projects";
 
 import { $ } from "./utils";
 
-const updateActualProjectName = () => {
+const updateCurrentProjectName = () => {
   const actualProjectName = $(".main__actual-project-name");
 
   projects.forEach((element) => {
@@ -12,4 +12,4 @@ const updateActualProjectName = () => {
   });
 };
 
-export default updateActualProjectName;
+export default updateCurrentProjectName;
