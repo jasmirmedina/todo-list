@@ -12,6 +12,14 @@ const cleanInput = (input) => {
 
 const checkLocalStorage = (item) => localStorage.getItem(item) === null;
 
+const saveToLocalStorage = (item) => {
+  localStorage.setItem("projects", JSON.stringify(item));
+};
+
+const getFromLocalStorage = (item) => {
+  return JSON.parse(localStorage.getItem(item));
+};
+
 const createElement = (tag, ...args) => {
   const el = document.createElement(tag);
 
@@ -24,4 +32,12 @@ const createElement = (tag, ...args) => {
   return el;
 };
 
-export { $, cleanCtn, cleanInput, checkLocalStorage, createElement };
+export {
+  $,
+  cleanCtn,
+  cleanInput,
+  checkLocalStorage,
+  createElement,
+  saveToLocalStorage,
+  getFromLocalStorage,
+};

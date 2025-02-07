@@ -1,4 +1,5 @@
 import addProject from "./add-project";
+import addTask from "./add-task";
 import render from "./render";
 
 import { $, cleanInput } from "./utils";
@@ -12,6 +13,8 @@ const projectName = $("#project-name");
 const tasksDialog = $(".tasks-dialog");
 const mainAddTaskBtn = $(".main__add-task-btn");
 const cancelTaskBtn = $(".tasks-dialog__cancel-task-btn");
+const taskTitle = $("#task-title");
+const addTaskBtn = $(".tasks-dialog__add-task-btn");
 
 const addDialogAnimations = (dialog, className, ...args) => {
   const btns = args;
@@ -27,11 +30,19 @@ const handleAddProjectDialog = () => {
   addProjectBtn.addEventListener("click", () => {
     if (projectName.value) {
       addProject(projectName.value);
-
       projectsDialog.classList.toggle("projects-dialog--is-hidden");
-
       cleanInput(projectName);
+      render();
+    }
+  });
+};
 
+const handleAddTaskDialog = () => {
+  addTaskBtn.addEventListener("click", () => {
+    if (taskTitle.value) {
+      addTask(taskTitle.value);
+      tasksDialog.classList.toggle("tasks-dialog--is-hidden");
+      cleanInput(taskTitle);
       render();
     }
   });
@@ -53,6 +64,7 @@ const handleDialog = () => {
   );
 
   handleAddProjectDialog();
+  handleAddTaskDialog();
 };
 
 export default handleDialog;
