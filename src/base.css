@@ -5,6 +5,16 @@
 @import url(./styles/projects-dialog.css);
 @import url(./styles/tasks-dialog.css);
 
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F;
+  src: url("../assets/fonts/Inter-Regular.woff2") format('woff2'),
+       url("../assets/fonts/Inter-Regular.woff") format('woff');
+}
+
 :root {
   --bg: #161515;
   --text: #f1f0f0;
@@ -14,13 +24,16 @@
   --hover: rgba(41, 41, 41, 0.4);
 }
 
+* {
+  font-family: "Inter", system-ui;
+}
+
 body {
   display: grid;
   grid-template-columns: auto 1fr;
   background-color: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  font-family: system-ui;
   overflow-y: hidden;
 }
 
